@@ -12,7 +12,10 @@
     "dropbox-v2-api": "^2.4.29",
     "next": "10.0.1",
     "react": "17.0.1",
+    "react-bandcamp": "^1.1.5",
     "react-dom": "17.0.1",
+    "react-facebook": "^8.1.4",
+    "react-spotify-player": "^1.0.4",
     "sass": "^1.29.0"
   }
 }

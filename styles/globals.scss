@@ -32,10 +32,16 @@ h1 {
   font-weight: bold;
   font-style: normal;
   font-size: 10rem;
+  @include media-breakpoint-down(sm) { 
+    font-size: 5rem;
+  }
 }
 
 h2 {
   font-size: 5rem;
+  @include media-breakpoint-down(sm) { 
+    font-size: 3rem;
+  }
 }
 
 h2, h3, h4 {
