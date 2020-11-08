@@ -1,64 +1,49 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Ragin' Diarrhea | Homepage</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div id="fb-root"/>
+      <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=658342791545843" nonce="HqqiIP7n"></script>
 
-      <main className={styles.main}>
+      <main className={`${styles.main} container-fluid`}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Ragin Diarrhea 
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="row mb-5">
+          <div className="col-sm-6">
+            <h2 className={styles.tagline}>
+              Circus Ska aus Herzogenaurach
+            </h2>
+          </div>
+          <div className="col-sm-6">
+            <div className="fb-page" data-href="https://www.facebook.com/theragind" data-tabs="timeline" data-width="" data-height="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/theragind" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/theragind">Ragin&#039; Diarrhea Facebook Page</a></blockquote></div>
+          </div>
         </div>
+
+        <div className="row mb-5">
+          <h2>Music</h2>
+        </div>
+
+        <div className="row mb-5">
+          <h2>Peeps</h2>
+        </div>
+
+        <div className="row mb-5">
+          <h2>Contact</h2>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        Website by <a className="pl-1" href="https://github.com/RussellSnyder">Russell Snyder</a>
       </footer>
     </div>
   )

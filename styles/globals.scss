@@ -1,0 +1,53 @@
+@import "./bootstrap_overrides.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'Astonished';
+  src: url('/Astonished.woff') format('woff'),
+       url('/Astonished.woff2') format('woff2'),
+       url('/Astonished.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Downcome';
+  src: url('/Downcome.woff') format('woff'),
+       url('/Downcome.woff2') format('woff2'),
+       url('/Downcome.ttf')  format('truetype')
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-image: url(/noise.png);
+    background-size: contain;
+    background-color: #F7E3B2;
+  
+}
+
+h1 {
+  font-family: 'Astonished';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h2, h3, h4 {
+  font-family: 'Downcome';
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
