@@ -17,6 +17,7 @@ function Home({ seo, main, sections }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta description={seo.description} />
         <meta name="robots" content="index, follow"/>
+        <meta charset="UTF-8"></meta>
       </Head>
       {/* <div id="fb-root" ></div>
       <script async defer samesite="true" crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=658342791545843" nonce="HqqiIP7n"></script> */}
@@ -84,17 +85,13 @@ export async function getStaticProps() {
     }
   })
 
-  // const reader = new FileReader();
-  // console.log(response)
   const data = await new Promise(function (resolve, reject) {
     response.on('readable', () => {
       response.setEncoding('utf8');
       const json = response.read()
-      console.log(json);
       resolve(JSON.parse(json))
     })
   })
-
 
   return {
     props: data
